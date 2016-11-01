@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>购物车提交</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		onoff = true;
+   			$(".gengduo").click(function(){
+   				if(onoff){
+   					$(this).parent().find(".tanchuang").css("display","block");
+   					onoff = false;
+   				}else{
+   					$(this).parent().find(".tanchuang").css("display","none");
+   					onoff = true;
+   				}  				
+   			});
+   			
+   			$(".tanchuang li a").click(function(){
+   				$(".tanchuang").css("display","none");
+   			});
+   			jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
+   		});
+   		
+    </script>
+</head>
+<body>
+	<div class="container-fluid" id="submit">
+		<header class="navbar-header">
+			<div class="header-pic"><img src="images/LOGO.png"></div>
+		</header>				
+		<div class="container-fluid">
+			<div class="xie">
+				<div class="wenzi wenziy fl"><a>1购物车</a></div>
+				<div class="pic pa"><img src="images/shengluehaoL.png"></div>
+				<div class="wenzi fl"><a>2填写收货信息</a></div>
+				<div class="pic pb"><img src="images/shengluehaoL.png"></div>
+				<div class="wenzi fr wenzit"><a class="dangqian">3订单提交成功</a></div>
+			</div>
+			<!--提交-->
+				<div class="kongbai">
+					<p><b><img src="images/gou.jpg"></b>您的订单提交成功</p>
+					<p>支付成功</p>
+				</div>
+				<div class="list">
+					<div class="item title"><p><span>订单编号：</span>LP201609208888</p></div>
+					<div class="item zhenwen clearfix">
+						<div class="wenleft"><span>商品信息</span></div>
+						<div class="fl pic"><img src="images/cp.jpg"></div>
+						<div class="hy1 fl hy">Touch系列水蓝片（月抛） 超湿润透氧</div>
+						<div class="hy2 fl hy"><time>2016</time><time>09-21</time></div>
+						<div class="hy3 fl hy"><p>¥69.00</p><p>1盒</p></div>
+					</div>
+					<div class="item zhenwen clearfix">
+						<div class="wenleft"><span>收货地址</span></div>
+						<div class="baby clearfix"><p><span>收货人姓名：</span>李小新</p><p><span>电话：</span>18885286458</p></div>
+						<div class="baby1"><p><span>地址：</span>重庆市 重庆市 北部新区金渝大道89号
+         线外城市花园2栋1701</p></div>
+					</div>
+					<div class="item zhenwen clearfix">
+						<div class="wenleft"><span>付款信息</span></div>
+						<div class="baby3">
+							<p><span>商品金额：</span>¥207.00</p>
+							<p><span>优惠券抵扣：</span>¥20.00</p>
+							<p><span>配送费：</span>¥0.00</p>
+						</div>
+					</div>
+				</div>
+			<!--提交-->
+		
+		<!--footer-->
+		<nav class="navbar navbar-default navbar-fixed-bottom navbar_footbgn daohang" role="navigation">
+			<div class="container-fluid">			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="foot_bgn_all xiangdui">
+					<a class="navbar-brand" href="index.html"><span><img src="images/home.png"></span>首页</a>
+			        <a class="navbar-brand" href="che.html"><span><img src="images/gouwuche.png"></span>购物车</a>
+			      <a class="navbar-brand gengduo" data-toggle="dropdown" href="javascript:;"><span class="ionpic"><img src="images/shenlue.jpg"></span>更多</a>
+			      <ul class="tanchuang">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="personal.html">个人中心</a>
+						</li>
+						<li>
+							<a href="#">企业文化</a>
+						</li>
+						<li>
+							<a href="#">企业文化</a>
+						</li>
+					</ul>
+			    </div>
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>	
+</body>
+</html>

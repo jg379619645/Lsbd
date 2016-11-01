@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		onoff = true;
+   			$(".gengduo").click(function(){
+   				if(onoff){
+   					$(this).parent().find(".tanchuang").css("display","block");
+   					onoff = false;
+   				}else{
+   					$(this).parent().find(".tanchuang").css("display","none");
+   					onoff = true;
+   				}  				
+   			});
+   			
+   			$(".tanchuang li a").click(function(){
+   				$(".tanchuang").css("display","none");
+   			});
+   			jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
+   		});
+   		
+    </script>
+</head>
+<body>
+	<div class="container-fluid" id="contact">
+		<!--header-->
+		<header class="navbar-header">
+			<div class="header-pic"><img src="images/LOGO.png"></div>
+		</header>
+		<!--header-->
+				
+		<!--centent-->
+		<div class="contyle">
+			<p><span class="icon-phone"></span>023-64569856</p>
+			<p>详情请致电蓝视博得</p>
+		</div>
+		<!--centent-->
+		
+		<!--footer-->
+		<nav class="navbar navbar-default navbar-fixed-bottom navbar_footbgn daohang" role="navigation">
+			<div class="container-fluid">			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="foot_bgn_all xiangdui">
+					<a class="navbar-brand" href="index.html"><span><img src="images/home.png"></span>首页</a>
+			        <a class="navbar-brand" href="che.html"><span><img src="images/gouwuche.png"></span>购物车</a>
+			      <a class="navbar-brand gengduo" data-toggle="dropdown" href="javascript:;"><span class="ionpic"><img src="images/shenlue.jpg"></span>更多</a>
+			      <ul class="tanchuang">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="personal.html">个人中心</a>
+						</li>
+						<li>
+							<a href="#">企业文化</a>
+						</li>
+						<li>
+							<a href="#">企业文化</a>
+						</li>
+					</ul>
+			    </div>
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>	
+</body>
+</html>

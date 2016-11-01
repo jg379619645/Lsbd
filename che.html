@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		onoff = true;
+   			$(".gengduo").click(function(){
+   				if(onoff){
+   					$(this).parent().find(".tanchuang").css("display","block");
+   					onoff = false;
+   				}else{
+   					$(this).parent().find(".tanchuang").css("display","none");
+   					onoff = true;
+   				}  				
+   			});
+   			
+   			$(".tanchuang li a").click(function(){
+   				$(".tanchuang").css("display","none");
+   			});
+   			jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
+   		});
+   		
+    </script>
+</head>
+<body>
+	<div class="container-fluid" id="che">
+		<header class="navbar-header">
+			<div class="header-pic"><img src="images/LOGO.png"></div>
+		</header>				
+		<div class="container-fluid">
+			<div class="xie">
+				<div class="wenzi wenziy fl"><a class="dangqian">1购物车</a></div>
+				<div class="pic pa"><img src="images/shengluehaoL.png"></div>
+				<div class="wenzi fl"><a>2填写收货信息</a></div>
+				<div class="pic pb"><img src="images/shengluehaoL.png"></div>
+				<div class="wenzi fr wenzit"><a>3订单提交成功</a></div>
+			</div>
+			<!--购物车为空时-->
+			<div class="conten_main">				
+				<div class="mid">
+						<p>当前购物车为空</p>
+						<a href="index.html">去首页选购</a>
+				</div>
+			</div>
+			<!--购物车为空时-->
+			<div class="list">
+				<div class="item clearfix">
+					<label class="chebox">
+						<span class="spanbg"></span>
+						<input type="checkbox"/>
+					</label>
+					<div class="fl xiaoyang">
+						<span><img src="images/cp.jpg"></span>
+						<div class="anniu"><span class="icon-plus-sign"></span><p>3</p><span class="icon-minus-sign fr"></span></div>
+					</div>
+					<div class="fl xiaozhang">
+						<p>Touch系列水蓝片（月抛）</p>
+						<p>超湿润透氧</p>
+						<p>单价：<span>¥69.00</span></p>
+					</div>
+				</div>
+				<div class="item gongji clearfix">
+					<label class="chebox fl">
+						<span class="spanbg"></span>
+						<input type="checkbox"/>
+					</label>
+					<p class="fl">全选</p>
+					<p class="fr">总计：<span>￥207.00</span></p>
+				</div>
+			</div>
+			<div class="quan clearfix">
+				<div class="quan_left fl"><span>优惠券</span></div>
+				<div class="quan_centent fl">
+					<p>￥<span>20</span></p>
+					<p>满200元可抵用</p>
+				</div>
+				<div class="quan_right fr">
+					<p>有效期至<span>2016-12-31</span></p>
+					<p>可购买站内任意产品</p>
+				</div>
+			</div>
+			<div class="jieshuan">
+				<div class="shuanleft">
+					<p>优惠券抵扣：<span>¥20.00</span></p>
+					<p>总计金额：<span>¥187.00</span></p>
+				</div>
+				<a href="take.html">去结算</a>
+			</div>
+		</div>
+		
+		
+		<!--footer-->
+		<nav class="navbar navbar-default navbar-fixed-bottom navbar_footbgn daohang" role="navigation">
+			<div class="container-fluid">			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="foot_bgn_all xiangdui">
+			      <a class="navbar-brand" href="index.html"><span><img src="images/home.png"></span>首页</a>
+			      <a class="navbar-brand" href="#"><span><img src="images/gouwuche.png"></span>购物车</a>
+			      <a class="navbar-brand gengduo" data-toggle="dropdown" href="javascript:;"><span class="ionpic"><img src="images/shenlue.jpg"></span>更多</a>
+			      <ul class="tanchuang">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="personal.html">个人中心</a>
+						</li>
+						<li>
+							<a href="#">企业文化</a>
+						</li>
+						<li>
+							<a href="#">企业文化</a>
+						</li>
+					</ul>
+			    </div>
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>	
+</body>
+</html>

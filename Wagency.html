@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>代理中心</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    <script type="text/javascript" src="js/ bounced.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		onoff = true;
+   			$(".gengduo").click(function(){
+   				if(onoff){
+   					$(this).parent().find(".tanchuang").css("display","block");
+   					onoff = false;
+   				}else{
+   					$(this).parent().find(".tanchuang").css("display","none");
+   					onoff = true;
+   				}  				
+   			});
+   			
+   			$(".tanchuang li a").click(function(){
+   				$(".tanchuang").css("display","none");
+   			});
+   			jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
+   			$(".botyuan button").click(function(){
+   				dlkjyle();
+   			});
+   		});
+   		
+    </script>
+</head>
+<body>
+	<div class="container-fluid" id="Wagency">
+		<!--header-->
+		<header class="navbar-header">
+			<div class="header-pic"><img src="images/LOGO.png"></div>
+		</header>
+		<!--header-->
+				
+		<!--centent-->
+		<div class="list">
+			<div class="item title">销售管理</div>
+			<div class="item shuoming">
+				<div class="topyuan clearfix">
+					<div class="le1 fl"><img src="images/wanghong.png"></div>
+					<div class="le2 fl">
+						<p>我是网红</p>
+						<p><span>女</span><span>18岁</span></p>
+						<p>YY直播</p>
+					</div>
+					<div class="le3 fl">
+						<p>销售总额</p>
+						<p>¥26880.00</p>
+					</div>
+					<div class="le4 fr">
+						<p>本周销售</p>
+						<p>¥2380.00</p>
+					</div>
+				</div>	
+				<div class="botyuan clearfix">
+					<p class="fl"><span>签约时间：</span>2016/06/01  至  2016/08/30</p>
+					<button type="button" class="fr">解除合约</button>
+				</div>
+			</div>	
+			<div class="item shuoming">
+				<div class="topyuan clearfix">
+					<div class="le1 fl"><img src="images/wanghong.png"></div>
+					<div class="le2 fl">
+						<p>我是网红</p>
+						<p><span>女</span><span>18岁</span></p>
+						<p>YY直播</p>
+					</div>
+					<div class="le3 fl">
+						<p>销售总额</p>
+						<p>¥26880.00</p>
+					</div>
+					<div class="le4 fr">
+						<p>本周销售</p>
+						<p>¥2380.00</p>
+					</div>
+				</div>	
+				<div class="botyuan clearfix">
+					<p class="fl"><span>签约时间：</span>2016/06/01  至  2016/08/30</p>
+					<button type="button" class="fr">解除合约</button>
+				</div>
+			</div>	
+			<div class="item shuoming">
+				<div class="topyuan clearfix">
+					<div class="le1 fl"><img src="images/wanghong.png"></div>
+					<div class="le2 fl">
+						<p>我是网红</p>
+						<p><span>女</span><span>18岁</span></p>
+						<p>YY直播</p>
+					</div>
+					<div class="le3 fl">
+						<p>销售总额</p>
+						<p>¥26880.00</p>
+					</div>
+					<div class="le4 fr">
+						<p>本周销售</p>
+						<p>¥2380.00</p>
+					</div>
+				</div>	
+				<div class="botyuan clearfix">
+					<p class="fl"><span>签约时间：</span>2016/06/01  至  2016/08/30</p>
+					<button type="button" class="fr">解除合约</button>
+				</div>
+			</div>	
+			<div class="item shuoming">
+				<div class="topyuan clearfix">
+					<div class="le1 fl"><img src="images/wanghong.png"></div>
+					<div class="le2 fl">
+						<p>我是网红</p>
+						<p><span>女</span><span>18岁</span></p>
+						<p>YY直播</p>
+					</div>
+					<div class="le3 fl">
+						<p>销售总额</p>
+						<p>¥26880.00</p>
+					</div>
+					<div class="le4 fr">
+						<p>本周销售</p>
+						<p>¥2380.00</p>
+					</div>
+				</div>	
+				<div class="botyuan clearfix">
+					<p class="fl"><span>签约时间：</span>2016/06/01  至  2016/08/30</p>
+					<button type="button" class="fr">解除合约</button>
+				</div>
+			</div>	
+		</div>
+		<!--centent-->
+		
+		<!--footer-->
+		<nav class="navbar navbar-default navbar-fixed-bottom navbar_footbgn daohang" role="navigation">
+			<div class="container-fluid">			
+			<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="foot_bgn_all xiangdui">
+					<a class="navbar-brand" href="index.html"><span><img src="images/home.png"></span>首页</a>
+			        <a class="navbar-brand" href="che.html"><span><img src="images/gouwuche.png"></span>购物车</a>
+			      <a class="navbar-brand gengduo" data-toggle="dropdown" href="javascript:;"><span class="ionpic"><img src="images/shenlue.jpg"></span>更多</a>
+			      <ul class="tanchuang">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="personal.html">个人中心</a>
+						</li>
+						<li>
+							<a href="#">企业文化</a>
+						</li>
+						<li>
+							<a href="#">企业文化</a>
+						</li>
+					</ul>
+			    </div>
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>	
+</body>
+</html>

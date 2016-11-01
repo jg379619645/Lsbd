@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>提现记录</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		onoff = true;
+   			$(".gengduo").click(function(){
+   				if(onoff){
+   					$(this).parent().find(".tanchuang").css("display","block");
+   					onoff = false;
+   				}else{
+   					$(this).parent().find(".tanchuang").css("display","none");
+   					onoff = true;
+   				}  				
+   			});
+   			
+   			$(".tanchuang li a").click(function(){
+   				$(".tanchuang").css("display","none");
+   			});
+   			jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,trigger:"click"});
+   			
+   			$(".gh3 a").click(function(){
+   				$(".gh3 a").removeClass("gu_hover");
+   				$(this).addClass("gu_hover");
+   			})
+   		});
+   		
+    </script>
+</head>
+<body>
+	<div class="container-fluid" id="account">
+		<!--header-->
+		<header class="navbar-header">
+			<div class="header-pic"><img src="images/LOGO.png"></div>
+		</header>
+		<!--header-->
+				
+		<!--centent-->
+		<div class="list">
+			<div class="item title">账户设置</div>
+			<div class="item zhengwen">
+				<div class="gh1">个人资料</div>
+				<div class="gh2"><input type="text" placeholder="呼呼~"/></div>
+				<div class="gh3 clearfix">
+					<a href="#" class="gu_hover fl">男</a>
+					<a href="#" class="fr">女</a>
+				</div>
+				<button class="gh4" type="button">保存</button>
+			</div>
+			<div class="item zhengwen went">
+				<div class="gh1">修改密码</div>
+				<div class="gh2"><input type="text" placeholder="输入旧密码"/></div>
+				<div class="gh2"><input type="text" placeholder="输入新密码"/></div>
+				<div class="gh2"><input type="text" placeholder="确认新密码"/></div>
+				<button class="gh4" type="button">保存</button>
+			</div>
+		</div>
+	</div>
+		<!--centent-->
+		
+		<!--footer-->
+	<nav class="navbar navbar-default navbar-fixed-bottom navbar_footbgn daohang" role="navigation">
+		<div class="container-fluid">			
+		<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="foot_bgn_all xiangdui">
+					<a class="navbar-brand" href="index.html"><span><img src="images/home.png"></span>首页</a>
+			        <a class="navbar-brand" href="che.html"><span><img src="images/gouwuche.png"></span>购物车</a>
+		      <a class="navbar-brand gengduo" data-toggle="dropdown" href="javascript:;"><span class="ionpic"><img src="images/shenlue.jpg"></span>更多</a>
+		      <ul class="tanchuang">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="personal.html">个人中心</a>
+					</li>
+					<li>
+						<a href="#">企业文化</a>
+					</li>
+					<li>
+						<a href="#">企业文化</a>
+					</li>
+				</ul>
+		    </div>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+</body>
+</html>
